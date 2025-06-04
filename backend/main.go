@@ -35,11 +35,11 @@ var db *gorm.DB
 
 func initDB() {
 	////////////////////////////////////////////////
-	hostname := os.Getenv("CHOREO_BANKINGDB_HOSTNAME")
-	port := os.Getenv("CHOREO_BANKINGDB_PORT")
-	username := os.Getenv("CHOREO_BANKINGDB_USERNAME")
-	password := os.Getenv("CHOREO_BANKINGDB_PASSWORD")
-	databasename := os.Getenv("CHOREO_BANKINGDB_DATABASENAME")
+	hostname := os.Getenv("MYSQL_HOST")
+	port := os.Getenv("MYSQL_PORT")
+	username := os.Getenv("MYSQL_USER")
+	password := os.Getenv("MYSQL_PWD")
+	databasename := os.Getenv("MYSQL_DB")
 	////////////////////////////////////////////////
 	if hostname == "" || port == "" || username == "" || password == "" || databasename == "" {
 		log.Fatal("One or more required MySQL environment variables are not set")
