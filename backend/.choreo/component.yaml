@@ -3,9 +3,9 @@ schemaVersion: "1.2"
 # +required Incoming connection details for the component
 endpoints:
   # +required Unique name for the endpoint.
-  - name: backing-app-backend-workshop
+  - name: backing-app-backend-june17-pd
     # +optional Display name for the endpoint.
-    displayName: Banking App Backend Workshop
+    displayName: Banking App Backend June17 PD
     # +required Service section has the user service endpoint details
     service:
       # +optional Context (base path) of the API that gets exposed via the endpoint.
